@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Logout</title>        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" href="production.css" type="text/css">
+        <script type="text/javascript" charset="utf-8">
+ 
+            // Wait for PhoneGap to load
+            document.addEventListener("deviceready", onDeviceReady, false);
+ 
+            // PhoneGap is ready
+            function onDeviceReady() {
+                // Do cool things here...
+                logout();
+            }
+ 
+            function logout() {
+                window.localStorage.setItem("access_token", "");
+                window.localStorage.setItem("userInfo", "");
+                window.location.href="login.html";             
+            }
+ 
+        </script>
+    </head>
+    <body>
+        <div>Logout</div>
+		<script type='text/javascript' src='steal.production.js'></script><script type='text/javascript' src='production.js'></script>
+        <script type="text/javascript">
+            
+        </script>
+    </body>
+</html>
