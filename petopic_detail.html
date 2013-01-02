@@ -17,7 +17,7 @@
                     <ul data-role="listview" data-filter="true" data-iscroll="enable" id="list_category" data-theme="a"></ul>
                 </div>
             </div>
-            <div data-role="content">
+            <div>
                 <div class="content-primary">
                     <div id="wrapper">
                         <div id="scroller">
@@ -42,9 +42,8 @@
             </div>-->
         </div>
         <div id="petick-content" style="display: block"></div>
-        <script type='text/javascript' src='steal.production.js?pesome'></script>
-        <script type="text/javascript">
-            
+        <!-- <script type='text/javascript' src='steal.production.js?pesome'></script> -->
+        <script type="text/javascript">function downloadJSAtOnload() { var element = document.createElement("script"); element.src = "steal.production.js?pesome"; document.body.appendChild(element); }  if (window.addEventListener){ window.addEventListener("load", downloadJSAtOnload, false); }else if (window.attachEvent){ window.attachEvent("onload", downloadJSAtOnload); }else{ window.onload = downloadJSAtOnload;}            
         </script>
     </body>
 </html>
