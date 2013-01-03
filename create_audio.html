@@ -2,44 +2,7 @@
 <html lang="en">
     <head>
         <title>pesome</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1">
-        <script type="text/javascript" charset="utf-8">
-
-            // Wait for PhoneGap to load
-            document.addEventListener("deviceready", onDeviceReady, false);
-
-            // PhoneGap is ready
-            function onDeviceReady() {
-                // Do cool things here...
-            }
-
-            function getAudio() {
-                // limit capture operation to 3 media files, no longer than 10 seconds each
-                var options = { limit: 3, duration: 10 };
-                navigator.device.capture.captureAudio(getAudioUrl, function(message) {
-                    alert('get audio failed');
-                },options);
-            }
-
-            function getAudioUrl(audioURI){
-
-                $('#audio_url').val(audioURI);
-                $('#audio_url').show();
-            }
-
-            function win(r) {
-                console.log("'-------------------------------------'Code = " + r.responseCode);
-                console.log("'-------------------------------------'Response = " + r.response);
-                console.log("'-------------------------------------'Sent = " + r.bytesSent);
-                alert('--------------------------'+r.response+'-------------------------------------');
-                //window.location.href='petopic_detail.html?id='+r.petopic.id;
-
-            }
-
-            function fail(error) {
-                alert("An error has occurred: Code = "+ error.code);
-            }
-        </script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1">        
     </head>
     <body>
         <!-- Home -->
@@ -51,7 +14,7 @@
                 </h2>                
             </div>
             <div>
-                <div id='create_audio'></div>
+                <form id='create_audio' enctype="multipart/form-data" method="post"></form>
             </div>
 
         </div>
