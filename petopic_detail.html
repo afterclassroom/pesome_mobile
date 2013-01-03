@@ -12,10 +12,15 @@
                 <a href="#" class="showMenu ui-btn-left">
                     Menu
                 </a>
-                <a href="#popupPanel" data-rel="popup" data-transition="slide" data-position-to="window" data-role="button"  class="ui-btn-right">Category</a>
-                <div data-role="popup" id="popupPanel" data-corners="false" data-theme="none" data-shadow="false" data-tolerance="0,0">
-                    <ul data-role="listview" data-filter="true" data-iscroll="enable" id="list_category" data-theme="a"></ul>
-                </div>
+                <a href="#popupPanel" data-rel="popup" data-transition="slide" data-position-to="window" data-role="button" id="category-button" class="ui-btn-right">Category</a>
+                <div id="icontacts-popover-bound">
+					<div class="icontacts-popover"></div>
+					<div id="icontacts-popover">
+						<div class="scroller">
+							<ul data-role="listview" data-filter="true" data-iscroll="" id="list_category" class="list_category" data-theme="a"></ul>
+						</div>
+					</div>
+				</div>
             </div>
             <div>
                 <div class="content-primary">
@@ -37,13 +42,13 @@
             </div>
 <!--            <div data-role="footer" data-position="fixed" class="ui-bar">
                 <div data-role="controlgroup" data-type="horizontal">
-                    <div id="settingButton"></div>                    
+                    <div id="settingButton"></div>
                 </div>
             </div>-->
         </div>
         <div id="petick-content" style="display: block"></div>
         <!-- <script type='text/javascript' src='steal.production.js?pesome'></script> -->
-        <script type="text/javascript">function downloadJSAtOnload() { var element = document.createElement("script"); element.src = "steal.production.js?pesome"; document.body.appendChild(element); }  if (window.addEventListener){ window.addEventListener("load", downloadJSAtOnload, false); }else if (window.attachEvent){ window.attachEvent("onload", downloadJSAtOnload); }else{ window.onload = downloadJSAtOnload;}            
+        <script type="text/javascript">function downloadJSAtOnload() { var element = document.createElement("script"); element.src = "steal.production.js?pesome"; document.body.appendChild(element); }  if (window.addEventListener){ window.addEventListener("load", downloadJSAtOnload, false); }else if (window.attachEvent){ window.attachEvent("onload", downloadJSAtOnload); }else{ window.onload = downloadJSAtOnload;}
         </script>
     </body>
 </html>
